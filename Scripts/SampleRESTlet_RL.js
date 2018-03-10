@@ -114,7 +114,7 @@ var app = ( function() {
 			internalId;
 		
 		// If Internal id is provided, updates the record
-		if (isNotEmpty(dataIn.internalId)) {
+		if (dataIn.internalId) {
 			record = nlapiLoadRecord(dataIn.recordType, dataIn.internalId);	
 		} else {
 			record = nlapiCreateRecord(dataIn.recordType);	
