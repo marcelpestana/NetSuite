@@ -110,7 +110,7 @@ var app = ( function() {
 		
 	    var internalId = form.addField('custpage_internalid', 'text', 'Internal Id', null);
 	    
-	    if (isNotEmpty(request.getParameter('custpage_internalid'))) internalId.setDefaultValue(request.getParameter('custpage_internalid')); 
+	    if (request.getParameter('custpage_internalid')) internalId.setDefaultValue(request.getParameter('custpage_internalid')); 
 	};
 
 	/**
@@ -172,7 +172,7 @@ var app = ( function() {
 			i = 0;
 		
 		// TODO: Add filters   
-		if (isNotEmpty(request.getParameter('custpage_internalid'))) filters[i++] = new nlobjSearchFilter('internalid', null, 'is', request.getParameter('custpage_internalid'));
+		if (request.getParameter('custpage_internalid')) filters[i++] = new nlobjSearchFilter('internalid', null, 'is', request.getParameter('custpage_internalid'));
 		
 		i = 0;
 		   

@@ -7,30 +7,6 @@
  */
 
 /**   
- * Checks if the object contains a value
- * 
- * @param {Object} obj Object to compare
-
- * @returns {Boolean} Indicates if the object contains a value
- */
-function hasValue(obj) {
-	
-	return obj != null && obj != undefined;
-}
-
-/**   
- * Checks if the object is not empty
- * 
- * @param {Object} obj Object to compare
- *
- * @returns {Boolean} Indicates if the object contains a value different than empty
- */
-function isNotEmpty(obj) {
-	
-	return obj != null && obj != undefined && obj != '' && typeof obj != 'undefined';
-}
-
-/**   
  * Result object
  * 
  * @returns {Object} Result object
