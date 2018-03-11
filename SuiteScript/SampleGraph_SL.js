@@ -29,7 +29,6 @@ function displayGraph() {
 	// Container for the graph
 	html += '<div id="container" style="width:400px; height:400px;"></div>';
 	
-	
 	// JavaScript to load the graph
 	html += '<script>NS.jQuery(document).ready(function(){'
 		  + '	    NS.jQuery("#container").highcharts({'
