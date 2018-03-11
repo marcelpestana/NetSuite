@@ -2,7 +2,7 @@
 
 - Scripts: Sample SuiteScript 1.0 Scripts
 
-- TBA
-Node.JS example how to request data from a NetSuite RESTlet using a Token Based authentication
+- TBA:
 
+Request data from NetSuite RESTlets using Token Based authentication.
 
