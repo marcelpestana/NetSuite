@@ -1,16 +1,8 @@
 var TBANetSuite = require('./tbanetsuite');
+var credentials = require('./credentials');
 var fs          = require('fs');
 var jsonFormat  = require('json-format');
 var open        = require('mac-open');
-
-// NetSuite account
-var credentials = {
-    accountId:      '<YOUR_ACCOUNT_ID>',
-    consumerKey:    '<CONSUMER_KEY>',
-    consumerSecret: '<CONSUMER_SECRET>',
-    tokenKey:       '<TOKEN_ID>',
-    tokenSecret:    '<TOKEN_SECRET>'
-}
 
 function createOpenFile(results, fileName) {
 
