@@ -2,7 +2,7 @@
 
 - Scripts: Sample SuiteScript 1.0 Scripts
 
-- TBA:
+- TokenBasedAuth:
 
 Request data from NetSuite RESTlets using Token Based authentication.
 

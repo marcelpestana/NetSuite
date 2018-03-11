@@ -39,7 +39,7 @@ var tbaTest = new TBANetSuite(credentials);
 var RESTLET_URL = 'https://rest.netsuite.com/app/site/hosting/restlet.nl'; 
 
 // Test GET
-tbaTest.request(RESTLET_URL + '?script=customscript_in8_inventory_rl&deploy=1&location=1&subsidiary=5')
+tbaTest.request(RESTLET_URL + '?script=customscript_inventory_rl&deploy=1&location=1&subsidiary=5')
     .then(function(result) {
         createOpenFile(result, 'Results/results_get.json');
     })
@@ -53,7 +53,7 @@ var payload = { 'recordType': 'customer',
                 'lastname': 'test111'
               };
 
-tbaTest.request(RESTLET_URL + '?script=customscript_in8_sync_rl&deploy=1', JSON.stringify(payload))
+tbaTest.request(RESTLET_URL + '?script=customscript_sync_rl&deploy=1', JSON.stringify(payload))
     .then(function(result) {
         createOpenFile(result, 'Results/results_post.json');
     })
