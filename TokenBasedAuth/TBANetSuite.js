@@ -38,13 +38,13 @@ module.exports = function(credentials) {
         };
         
         // Generate the header
-        var headerWithRealm = oauth.toHeader(oauth.authorize(request_data, token));
-        headerWithRealm.Authorization += ', realm="' + credentials.accountId + '"';
+        var header = oauth.toHeader(oauth.authorize(request_data, token));
+        header.Authorization += ', realm="' + credentials.accountId + '"';
         
         // Setup the header
         var headers = {
             'User-Agent': 'TBA',
-            'Authorization': headerWithRealm.Authorization,
+            'Authorization': header.Authorization,
             'content-type': 'application/json'
         };
         
